@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Owino — Integrations Engineer</title>
+<meta name="description" content="Kevin Owino — Senior Application Developer & Integrations Engineer. M-Pesa Daraja, Django, Flutter, core banking integrations, Nairobi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="#top" class="brand">K.OWINO<span class="brand-dot">_</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#stack">stack</a>
+      <a href="#log">log</a>
+      <a href="#experience">experience</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">POST /contact</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot dot-live"></span>NAIROBI, KE &nbsp;·&nbsp; AVAILABLE FOR INTEGRATIONS WORK</p>
+      <h1>
+        I build the pipes<br>
+        between systems<span class="accent">.</span><br>
+        <span class="muted-line">Money, records, and messages</span><br>
+        <span class="muted-line">move through them clean.</span>
+      </h1>
+      <p class="hero-sub">
+        Senior Application Developer &amp; Integrations Engineer at <strong>Stima Sacco</strong>,
+        10+ years wiring core banking, mobile money, and enterprise systems together —
+        M-Pesa Daraja, PesaLink, Microsoft Dynamics Navision, SAP, and FHIR healthcare data.
+      </p>
+      <div class="hero-actions">
+        <a href="#log" class="btn btn-primary">View integrations →</a>
+        <a href="https://x.com/koangura" target="_blank" rel="noopener" class="btn btn-ghost">@koangura on X</a>
+      </div>
+      <dl class="hero-stats">
+        <div><dt>10+</dt><dd>years shipping</dd></div>
+        <div><dt>6</dt><dd>payment &amp; core systems integrated</dd></div>
+        <div><dt>2</dt><dd>stacks daily — Django &amp; Flutter</dd></div>
+      </dl>
+    </div>
+
+    <div class="hero-demo" aria-label="Simulated M-Pesa STK Push flow">
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-status-bar">
+            <span>Safaricom</span>
+            <span id="phoneClock">10:42</span>
+          </div>
+          <div class="phone-body">
+            <p class="phone-label">M-PESA STK PUSH — DARAJA SANDBOX</p>
+            <div class="stk-card">
+              <p class="stk-title" id="stkTitle">Sending payment request…</p>
+              <p class="stk-detail" id="stkDetail">To: STIMA SACCO — KES 2,450.00</p>
+              <div class="stk-progress">
+                <div class="stk-progress-bar" id="stkProgress"></div>
+              </div>
+              <p class="stk-code" id="stkCode">POST /mpesa/stkpush/v1/processrequest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="demo-caption">Live-simulated STK Push lifecycle — the same flow shipped for Sacco loan repayments &amp; onboarding.</p>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section wrap">
+    <p class="section-eyebrow">// GET /stack</p>
+    <h2 class="section-title">What I build with, in production</h2>
+
+    <div class="stack-response">
+      <div class="stack-response-head">
+        <span class="dot dot-live"></span> 200 OK — response body
+      </div>
+      <div class="stack-grid">
+
+        <div class="stack-block">
+          <p class="stack-key">"payments"</p>
+          <ul>
+            <li>M-Pesa Daraja API — STK Push, C2B, B2C</li>
+            <li>PesaLink / IPSL</li>
+            <li>Reversals &amp; balance inquiry</li>
+          </ul>
+        </div>
+
+        <div class="stack-block">
+          <p class="stack-key">"backend"</p>
+          <ul>
+            <li>Python / Django, Django REST Framework</li>
+            <li>Celery + Redis</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div class="stack-block">
+          <p class="stack-key">"mobile"</p>
+          <ul>
+            <li>Flutter — GetX, BLoC</li>
+            <li>Offline-first SQLite sync</li>
+          </ul>
+        </div>
+
+        <div class="stack-block">
+          <p class="stack-key">"enterprise_and_health"</p>
+          <ul>
+            <li>Microsoft Dynamics Navision — SOAP / Zeep</li>
+            <li>SAP — Certified Associate Developer</li>
+            <li>Epic FHIR R4 / HL7v2</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT LOG -->
+  <section id="log" class="section wrap">
+    <p class="section-eyebrow">// GET /transactions?type=project</p>
+    <h2 class="section-title">Integration log</h2>
+    <p class="section-sub">Selected work, styled the way I like to see a transaction — status, amount of scope moved, reference.</p>
+
+    <div class="ledger">
+
+      <article class="ledger-row">
+        <div class="ledger-status status-live"><span class="dot dot-live"></span>LIVE</div>
+        <div class="ledger-main">
+          <h3>SaccoSync</h3>
+          <p>Digital member onboarding &amp; loan repayment platform for Stima Sacco — Flutter mobile app with Daraja STK Push and offline-first sync, Django/DRF backend, Next.js member web app.</p>
+          <div class="tags"><span>Flutter</span><span>Django REST</span><span>Next.js</span><span>Daraja API</span></div>
+        </div>
+        <div class="ledger-ref">REF #SS-ONBOARD</div>
+      </article>
+
+      <article class="ledger-row">
+        <div class="ledger-status status-progress"><span class="dot dot-pending"></span>IN PROGRESS</div>
+        <div class="ledger-main">
+          <h3>S-Ustawi</h3>
+          <p>Verified-member social platform for Stima Sacco members, blending cooperative finance with social features — M-Pesa Daraja integration, SASRA compliance, governance tooling.</p>
+          <div class="tags"><span>Django</span><span>Daraja API</span><span>SASRA compliance</span></div>
+        </div>
+        <div class="ledger-ref">REF #SU-CORE</div>
+      </article>
+
+      <article class="ledger-row">
+        <div class="ledger-status status-client"><span class="dot dot-neutral"></span>CLIENT</div>
+        <div class="ledger-main">
+          <h3>GranSafaris Bespoke</h3>
+          <p>Luxury Kenya safari platform — Django site with multilingual support (i18n / django-modeltranslation), booking forms, SEO, and TripAdvisor testimonial integration.</p>
+          <div class="tags"><span>Django</span><span>i18n</span><span>SEO</span></div>
+        </div>
+        <div class="ledger-ref">REF #GS-WEB</div>
+      </article>
+
+      <article class="ledger-row">
+        <div class="ledger-status status-live"><span class="dot dot-live"></span>LIVE</div>
+        <div class="ledger-main">
+          <h3>MSA Car Market</h3>
+          <p>Car marketplace spanning web and mobile — Django + DRF ViewSets for listings and vendors, Flutter/GetX app with search, uploads, and vendor management.</p>
+          <div class="tags"><span>Django REST</span><span>Flutter</span><span>GetX</span></div>
+        </div>
+        <div class="ledger-ref">REF #MSA-MKT</div>
+      </article>
+
+      <article class="ledger-row">
+        <div class="ledger-status status-client"><span class="dot dot-neutral"></span>SYSTEMS</div>
+        <div class="ledger-main">
+          <h3>Core system integrations</h3>
+          <p>IPRS citizen-data integration with SMS threshold alerts, a thread-safe Navision SOAP/Zeep client, Epic FHIR R4 + HL7v2 healthcare data exchange, and a KRA PIN verification service.</p>
+          <div class="tags"><span>SOAP / Zeep</span><span>FHIR R4</span><span>Africa's Talking</span></div>
+        </div>
+        <div class="ledger-ref">REF #SYS-INT</div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section wrap">
+    <p class="section-eyebrow">// GET /experience?order=desc</p>
+    <h2 class="section-title">Where I've built this</h2>
+
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-role">Senior Application Developer &amp; Integrations Engineer</p>
+          <p class="timeline-org">Stima Sacco Society Ltd — Nairobi</p>
+          <p class="timeline-desc">Built the Sacco's M-Pesa Daraja and PesaLink/IPSL integrations from scratch; own core application development and cross-system integration work.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <p class="timeline-role">Software / Integrations roles</p>
+          <p class="timeline-org">Tikvah Solutions · Chriscam Services Ltd · PrimeTime Technologies · Manufacturing Software Support</p>
+          <p class="timeline-desc">Progressive backend and integration engineering roles building the foundation for today's fintech and enterprise integration work.
+            <em>— add specific dates &amp; achievements here.</em>
+          </p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section wrap contact-section">
+    <p class="section-eyebrow">// POST /contact</p>
+    <h2 class="section-title">Send a request</h2>
+    <p class="section-sub">Open to integrations work, fintech builds, and Django/Flutter projects.</p>
+
+    <div class="webhook-card">
+      <pre class="webhook-body">{
+  "to": "<a href="mailto:kevincliffo@gmail.com">kevincliffo@gmail.com</a>",
+  "x": "<a href="https://x.com/koangura" target="_blank" rel="noopener">@koangura</a>",
+  "github": "<a href="https://github.com/kevincliffo" target="_blank" rel="noopener">github.com/kevincliffo</a>",
+  "location": "Nairobi, Kenya",
+  "status": "200 OK — open to new integrations"
+}</pre>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <p>Kevin Owino — built with Django-brain, deployed as static HTML.</p>
+  <p class="footer-year">© <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
