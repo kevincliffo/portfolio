@@ -10,14 +10,14 @@ A single-page portfolio site styled around the world you actually work in: API r
 
 ## Before you publish — fill these in
 
-Search the files for these placeholders and replace them:
+Real contact details, employment history, and education from your CV are now in place. Two things are still placeholders:
 
 | Where | Placeholder | File |
 |---|---|---|
-| Contact card | `your.email@example.com` | `index.html` |
-| Contact card | `github.com/your-username` (href + text) | `index.html` |
-| Experience timeline | Dates/achievements for Tikvah Solutions, Chriscam, PrimeTime, Manufacturing Software Support | `index.html` |
+| Contact card | `github` and `linkedin` fields — currently `href="#"` with "add your … URL" text | `index.html` (search `add your`) |
 | Project log | Add live links if any projects are publicly deployed (currently text-only) | `index.html` |
+
+Your CV lists references (Abdulrazaaq Adan, Kevin Tole, Fredrick Oloo) — I left those off the public site since personal contact details for third parties usually shouldn't go on a public page. Share those directly with employers instead.
 
 ## Deploy with GitHub Pages
 

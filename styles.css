@@ -444,6 +444,11 @@ a{ color: inherit; }
   font-weight: 600;
   font-size: 15px;
 }
+.timeline-date{
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 13px;
+}
 .timeline-org{
   margin: 0 0 10px;
   font-size: 13px;
